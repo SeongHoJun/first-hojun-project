@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"  />
+        <meta http-equiv="X-UA Compatible" content="IE=edge"    />
+        <meta name=""viewport" content="width=device-width, initial-scale=1.0"  />
+        <title>테이블(form)</title>
+    </head>
+    <body>
+        <table border="1"> <!--항상 먼저 사용, border="1"테두리 생성 (css로 대체가능_임시사용)-->
+            <caption>가격표</caption>
+            <col style="width:80px" />
+            <colgroup span ="2" style="width: 150px"></colgroup>
+            <col style="width 80px" />
+            <thead>
+             <tr><!--행-->
+                <th>번호</th> <!--th 태그는 제목의 성격-->
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+             </tr>
+            </thead>
+            <tfoot>
+                <tr><!--행-->
+                   <td>총 금액</td>
+                   <td colspan="3">3,300원</td> <!--colspan 열 병합-->
+                </tr>
+            </tfoot> 
+            <tbody>
+             <tr><!--행-->
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+             </tr>
+            <tr><!--행-->
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td rowspan="2">1,800원</td> <!--rowspan 행 병합-->
+            </tr>
+            <tr><!--행-->
+                <td>3</td>
+                <td>환타</td>
+                <td>3개</td>
+             </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
